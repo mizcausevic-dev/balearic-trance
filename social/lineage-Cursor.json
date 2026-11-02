@@ -1,0 +1,47 @@
+{
+  "commands": {
+    "card": [
+      "ffmpeg",
+      "-y",
+      "-i",
+      "/home/runner/work/balearic-trance/balearic-trance/art/hero.jpg",
+      "-vf",
+      "scale=1600:900",
+      "-q:v",
+      "3",
+      "/home/runner/work/balearic-trance/balearic-trance/social/x-Cursor/card.jpg"
+    ],
+    "portrait": [
+      "ffmpeg",
+      "-y",
+      "-i",
+      "/home/runner/work/balearic-trance/balearic-trance/art/square.jpg",
+      "-vf",
+      "crop=864:1080:108:0,scale=1080:1350",
+      "-q:v",
+      "3",
+      "/home/runner/work/balearic-trance/balearic-trance/social/instagram-Cursor/portrait.jpg"
+    ]
+  },
+  "hero": "JPEG of the 1280x720 wide framing. The film plate is a JPEG of the same PPM, made before this final hero file was written.",
+  "instagram_portrait": "crop=864:1080:108:0 of the square still, then scale to 1080x1350. 108 is (1080-864)/2. 864/1080 is 0.80.",
+  "instagram_square": "Byte copy of art/square.jpg.",
+  "instagram_square_sha256": "cd57d3c9bcd0137fdd2d890894018b9a6f262a3173f1d24c410be744b0cdddfd",
+  "painter": "tools/render_visual.py paint()",
+  "poster_command": [
+    "ffmpeg",
+    "-y",
+    "-i",
+    "/home/runner/work/balearic-trance/balearic-trance/art/hero.jpg",
+    "-vf",
+    "drawtext=textfile=/home/runner/work/balearic-trance/balearic-trance/build/onpicture.txt:fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:fontsize=48:fontcolor=white:x=(w-text_w)/2:y=h-100:box=1:boxcolor=black@0.68:boxborderw=22",
+    "-frames:v",
+    "1",
+    "-q:v",
+    "3",
+    "/home/runner/work/balearic-trance/balearic-trance/film/poster.jpg"
+  ],
+  "square": "JPEG of the 1080x1080 square framing of the same painter. Not a scale of the hero.",
+  "square_sha256": "cd57d3c9bcd0137fdd2d890894018b9a6f262a3173f1d24c410be744b0cdddfd",
+  "x_card": "scale the 1280x720 hero to 1600x900."
+}

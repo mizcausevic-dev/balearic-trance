@@ -1,0 +1,156 @@
+preview, not a master
+{
+  "arrangement_path": "midi/k01-salt-terrace/arrangement.mid",
+  "arrangement_sha256": "2ee4dcb7d597e68c7ecb8458996ad32de5b9dd90b149ab82ab76392044af5102",
+  "encode": "libmp3lame CBR 192 kbps, mono source",
+  "excerpt": {
+    "bars": "17-32 of the 32-bar arrangement",
+    "end_tick": 122880,
+    "full_arrangement_bars": 32,
+    "full_arrangement_seconds": 60.0,
+    "kit": "k01",
+    "reason": "The preview is an excerpt of the 32-bar Salt Terrace arrangement. Bars 17-24 are the open section. Bars 25-32 are the return, and the return restates the motif. Bars 1-16, the opening theme and the sequence, stay in the MIDI and are not in the MP3. The full arrangement is longer than 40 seconds.",
+    "rendered_tick_zero": "arrangement tick minus the excerpt start",
+    "sequencing": [
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/drums-a.mid",
+        "role": "drums",
+        "source_part": "k01.drums.a",
+        "start_bar": 24
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/bass-a.mid",
+        "role": "bass",
+        "source_part": "k01.bass.a",
+        "start_bar": 24
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/keys-b.mid",
+        "role": "keys",
+        "source_part": "k01.keys.b",
+        "start_bar": 16
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/keys-a.mid",
+        "role": "keys",
+        "source_part": "k01.keys.a",
+        "start_bar": 24
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/motif-a.mid",
+        "role": "motif",
+        "source_part": "k01.motif.a",
+        "start_bar": 24
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/sequence-b.mid",
+        "role": "sequence",
+        "source_part": "k01.sequence.b",
+        "start_bar": 16
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/pad-b.mid",
+        "role": "pad",
+        "source_part": "k01.pad.b",
+        "start_bar": 16
+      },
+      {
+        "bars": 8,
+        "path": "midi/k01-salt-terrace/pad-a.mid",
+        "role": "pad",
+        "source_part": "k01.pad.a",
+        "start_bar": 24
+      }
+    ],
+    "start_tick": 61440,
+    "transposition": "none"
+  },
+  "intermediate_wav": "build/preview.wav",
+  "intermediate_wav_note": "The WAV is gitignored build storage. The delivered preview is the MP3.",
+  "intermediate_wav_sha256": "89d60249f62e85500822f8c448c91c535345c76686c145f52cf3be48543589e1",
+  "label": "preview, not a master",
+  "listening": "No human listening audition was performed for this build.",
+  "mapping": {
+    "bass": "dull saw at the written pitch, short decay, held for the written duration",
+    "drums": "pitch 36 is a short sine kick; hats, snare, clap, stick, and crash are noise bursts",
+    "keys": "soft tone at the written pitch, held for the written duration",
+    "motif": "sine at the written pitch, held for the written duration",
+    "pad": "slow sine at the written pitch, held for the written duration",
+    "sequence": "triangle at the written pitch, short decay"
+  },
+  "mp3_encode_command": [
+    "ffmpeg",
+    "-y",
+    "-i",
+    "/home/runner/work/balearic-trance/balearic-trance/build/preview.wav",
+    "-codec:a",
+    "libmp3lame",
+    "-b:a",
+    "192k",
+    "/home/runner/work/balearic-trance/balearic-trance/preview/preview.mp3"
+  ],
+  "mp3_path": "preview/preview.mp3",
+  "mp3_sha256": "3a4616554f56559a026d87b42350e997a5466f2b654c14137393bfb398e00908",
+  "pack_id": "balearic-trance",
+  "program_changes": "No program changes are encoded. A conventional GM player will normally use its default piano program for pitched channels unless configured otherwise; compatible GM channel 10 percussion is treated separately. Player behavior may vary.",
+  "renderer": "simple-synth-1.0.0",
+  "renderer_note": "These voices are preview mappings. They are not encoded in the MIDI file.",
+  "rounding": "sample = floor(seconds * sample_rate + 0.5), computed from tick 0; intervals are not summed",
+  "sample_peak": 24593,
+  "sample_peak_dbfs": -2.492768503455596,
+  "sample_peak_note": "This is a sample peak of the integer mix after scaling. It is not a loudness measurement and it is not a true-peak reading.",
+  "score_seconds": 30.0,
+  "score_sha256": "57f5921fd83a70573b54e20a0c87fa1babe9812b3bbba49018319c0d4a94ff0e",
+  "seconds_encoded": 30.0,
+  "source_parts": [
+    {
+      "id": "k01.drums.a",
+      "path": "midi/k01-salt-terrace/drums-a.mid",
+      "sha256": "c44c43f3693a71ad7c0c45a1a2f213d960d631aab22d2bc8513c1b8882221423"
+    },
+    {
+      "id": "k01.bass.a",
+      "path": "midi/k01-salt-terrace/bass-a.mid",
+      "sha256": "362ee2dea8a084bb4b98e2a0b5fc553c6baccbd9b937dd5015b9397125d24cf9"
+    },
+    {
+      "id": "k01.keys.b",
+      "path": "midi/k01-salt-terrace/keys-b.mid",
+      "sha256": "927231f5093d78201c28f07aa29861f6e3ea1c91a2f792a1f4e34f6a06e2cbfe"
+    },
+    {
+      "id": "k01.keys.a",
+      "path": "midi/k01-salt-terrace/keys-a.mid",
+      "sha256": "c0e9c5721cbc278e85ec7e0dd13c962ac66b39cd2f2841956a717f524d4d346c"
+    },
+    {
+      "id": "k01.motif.a",
+      "path": "midi/k01-salt-terrace/motif-a.mid",
+      "sha256": "77b85218c2850091ea66e044196e6fd1a49674916da4d2180cc348b6058dface"
+    },
+    {
+      "id": "k01.sequence.b",
+      "path": "midi/k01-salt-terrace/sequence-b.mid",
+      "sha256": "a0964d962256e865615bde9b92f292e354868ccf431f1f977beb0bf34598386b"
+    },
+    {
+      "id": "k01.pad.b",
+      "path": "midi/k01-salt-terrace/pad-b.mid",
+      "sha256": "09cb221559e1a91a7aca68f9c520c2dcaee369dfcb557962dfded4c86f1ae828"
+    },
+    {
+      "id": "k01.pad.a",
+      "path": "midi/k01-salt-terrace/pad-a.mid",
+      "sha256": "81cd146a072cdcc2a3110258142e76d57cd9df6c64bcaebbcd16fbd27ff3e18e"
+    }
+  ],
+  "tempo_authority": "encoded MIDI tempo",
+  "tempo_us": 468750
+}
