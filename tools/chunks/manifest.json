@@ -4,7 +4,11 @@
       "tools/chunks/build_pack.py.b64.00",
       "tools/chunks/build_pack.py.b64.01",
       "tools/chunks/build_pack.py.b64.02",
-      "tools/chunks/build_pack.py.b64.03"
+      "tools/chunks/build_pack.py.b64.03",
+      "tools/chunks/build_pack.py.b64.04",
+      "tools/chunks/build_pack.py.b64.05",
+      "tools/chunks/build_pack.py.b64.06",
+      "tools/chunks/build_pack.py.b64.07"
     ],
     "sha256": "a4e04859967713e260c5bfc3c069dfc8f444965259e746e7d70757009c8f3863",
     "bytes": 23921
@@ -17,7 +21,14 @@
       "tools/chunks/compose.py.b64.03",
       "tools/chunks/compose.py.b64.04",
       "tools/chunks/compose.py.b64.05",
-      "tools/chunks/compose.py.b64.06"
+      "tools/chunks/compose.py.b64.06",
+      "tools/chunks/compose.py.b64.07",
+      "tools/chunks/compose.py.b64.08",
+      "tools/chunks/compose.py.b64.09",
+      "tools/chunks/compose.py.b64.10",
+      "tools/chunks/compose.py.b64.11",
+      "tools/chunks/compose.py.b64.12",
+      "tools/chunks/compose.py.b64.13"
     ],
     "sha256": "1b3f7d385b753808ebc6e410ce0ecd832cbe92bd834990f7cf3a1cc22f053d9d",
     "bytes": 47095
@@ -28,7 +39,11 @@
       "tools/chunks/page.py.b64.01",
       "tools/chunks/page.py.b64.02",
       "tools/chunks/page.py.b64.03",
-      "tools/chunks/page.py.b64.04"
+      "tools/chunks/page.py.b64.04",
+      "tools/chunks/page.py.b64.05",
+      "tools/chunks/page.py.b64.06",
+      "tools/chunks/page.py.b64.07",
+      "tools/chunks/page.py.b64.08"
     ],
     "sha256": "20e717b648472abd75e2f096a7d49765181296c0b85ff3bf1e98b1daa7ee82f0",
     "bytes": 27886
@@ -39,7 +54,11 @@
       "tools/chunks/validate.py.b64.01",
       "tools/chunks/validate.py.b64.02",
       "tools/chunks/validate.py.b64.03",
-      "tools/chunks/validate.py.b64.04"
+      "tools/chunks/validate.py.b64.04",
+      "tools/chunks/validate.py.b64.05",
+      "tools/chunks/validate.py.b64.06",
+      "tools/chunks/validate.py.b64.07",
+      "tools/chunks/validate.py.b64.08"
     ],
     "sha256": "845d4150edd4ddd037cdd17a793e871e2ccd558d7139413c377691ca6a19ba3d",
     "bytes": 30352
