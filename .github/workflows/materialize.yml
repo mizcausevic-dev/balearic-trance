@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Install ffmpeg and fonts
         run: |
@@ -39,4 +41,6 @@ jobs:
             git commit -m "Add rendered MIDI pack assets [skip ci]"
             git push origin HEAD:main
           fi
+          git fetch origin gh-pages
+          git merge origin/gh-pages -s ours --no-edit -m "Sync gh-pages with materialized main [skip ci]" || true
           git push origin HEAD:gh-pages
