@@ -8,13 +8,14 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+REPO = ROOT.parent
 MANIFEST = ROOT / "chunks" / "manifest.json"
 
 
 def main() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     for name, spec in data.items():
-        blob = "".join((ROOT / part).read_text(encoding="ascii") for part in spec["parts"])
+        blob = "".join((REPO / part).read_text(encoding="ascii") for part in spec["parts"])
         raw = base64.b64decode(blob)
         digest = hashlib.sha256(raw).hexdigest()
         if digest != spec["sha256"]:
